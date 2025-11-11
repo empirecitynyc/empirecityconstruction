@@ -52,26 +52,26 @@ export default defineNuxtConfig({
   },
 
   llms: {
-    domain: 'https://docs-template.nuxt.dev/',
+    domain: 'https://empirecityconstruction.vercel.app/',
     title: 'Nuxt Docs Template',
-    description: 'A template for building documentation with Nuxt UI and Nuxt Content.',
+    description: 'A website for showing off our work',
     full: {
-      title: 'Nuxt Docs Template - Full Documentation',
-      description: 'This is the full documentation for the Nuxt Docs Template.'
+      title: 'Empire City Construction',
+      description: 'This is the full documentation for Empire City Construction.'
     },
     sections: [
       {
-        title: 'Getting Started',
+        title: 'About',
         contentCollection: 'docs',
         contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/getting-started%' }
+          { field: 'path', operator: 'LIKE', value: '/about%' }
         ]
       },
       {
-        title: 'Essentials',
+        title: 'Services',
         contentCollection: 'docs',
         contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/essentials%' }
+          { field: 'path', operator: 'LIKE', value: '/services%' }
         ]
       }
     ]
