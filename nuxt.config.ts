@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-og-image',
-    'nuxt-llms'
+    'nuxt-llms',
+    'nuxt-studio'
   ],
 
   devtools: {
@@ -74,5 +75,19 @@ export default defineNuxtConfig({
         ]
       }
     ]
+  },
+
+  studio: {
+    // Studio admin route (default: '/_studio')
+    route: '/_studio',
+    
+    // GitHub repository configuration (owner and repo are required)
+    repository: {
+      provider: 'github', // only GitHub is currently supported
+      owner: 'empirecitynyc', // your GitHub username or organization
+      repo: 'empirecityconstruction', // your repository name
+      branch: 'main', // the branch to commit to (default: main)
+      rootDir: '' // optional: if your Nuxt app is in a subdirectory (default: '')
+    }
   }
 })
