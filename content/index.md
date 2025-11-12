@@ -12,6 +12,15 @@ class: dark:bg-gradient-to-b from-neutral-900 to-neutral-950
   :::hero-background
   :::
 
+  :::u-color-mode-image
+  ---
+  class: w-full h-[1000px] object-cover object-center overflow-hidden
+  dark: https://empirecityconstruction.vercel.app/1_E_66th/office1.jpg
+  light: https://empirecityconstruction.vercel.app/1_E_66th/living1.jpg
+  sizes: 100vw
+  ---
+  :::
+
   :::stars-bg
   :::
 
