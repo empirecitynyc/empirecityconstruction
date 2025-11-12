@@ -4,42 +4,11 @@ seo:
   description: Design your space & let us make it happen
 ---
 
-::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
+::u-page-hero
 ---
+class: dark:bg-gradient-to-b from-neutral-900 to-neutral-950
 orientation: horizontal
 ---
-#top
-:hero-background
-
-#title
-Empire City [Construction]{.text-primary}.
-
-#description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
-
-#links
-  :::u-button
-  ---
-  to: /
-  size: xl
-  trailing-icon: i-lucide-house
-  ---
-  Create
-  :::
-
-  :::u-button
-  ---
-  icon: i-lucide-layers
-  color: neutral
-  variant: outline
-  size: xl
-  to: /
-  target: _blank
-  ---
-  Our work
-  :::
-
-#default
   :::prose-pre
   ---
   code: |
@@ -50,12 +19,11 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
         'nuxt-og-image',
         'nuxt-llms'
       ],
-
+  
       css: ['~/assets/css/main.css']
     })
   filename: nuxt.config.ts
   ---
-
   ```ts [nuxt.config.ts]
   export default defineNuxtConfig({
     modules: [
@@ -64,14 +32,44 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
       'nuxt-og-image',
       'nuxt-llms'
     ],
-
+  
     css: ['~/assets/css/main.css']
   })
   ```
   :::
+
+#top
+  :::hero-background
+  :::
+
+#title
+Empire City [Construction]{.text-primary}.
+
+#description
+Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
+
+#links
+  :::u-button{size="xl" to="/" trailing-icon="i-lucide-house"}
+  Create
+  :::
+
+  :::u-button
+  ---
+  color: neutral
+  icon: i-lucide-layers
+  size: xl
+  target: _blank
+  to: /
+  variant: outline
+  ---
+  Our work
+  :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Powered by Nuxt UI components
 
@@ -95,7 +93,7 @@ Powered by Nuxt UI components
   ---
   #title
   100+ UI Components
-
+  
   #description
   Access the complete Nuxt UI component library. From badges to modals, everything styled and accessible out of the box.
   :::
@@ -106,7 +104,7 @@ Powered by Nuxt UI components
   ---
   #title
   Beautiful Typography
-
+  
   #description
   Pre-styled prose components with perfect visual harmony. No need for @tailwindcss/typography - get precise control over every element.
   :::
@@ -117,7 +115,7 @@ Powered by Nuxt UI components
   ---
   #title
   Rich Prose Components
-
+  
   #description
   Accordions, cards, callouts, tabs, steps, code blocks, and more - all provided by Nuxt UI for interactive documentation.
   :::
@@ -128,7 +126,7 @@ Powered by Nuxt UI components
   ---
   #title
   Built-in Search
-
+  
   #description
   Full-text search with ContentSearch component. No need for Algolia - instant, relevant results with keyboard shortcuts (⌘K).
   :::
@@ -139,7 +137,7 @@ Powered by Nuxt UI components
   ---
   #title
   Smart Navigation
-
+  
   #description
   Auto-generated navigation with ContentNavigation and ContentToc components. Sticky table of contents and prev/next links.
   :::
@@ -150,13 +148,16 @@ Powered by Nuxt UI components
   ---
   #title
   Dark Mode Ready
-
+  
   #description
   Automatic theme switching with smooth transitions. Respects system preferences and remembers user choice.
   :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Enhanced with Nuxt Content
 
@@ -180,7 +181,7 @@ Enhanced with Nuxt Content
   ---
   #title
   MDC Enhanced Markdown
-
+  
   #description
   Write in Markdown while embedding Vue components. Seamlessly integrate interactive elements in your content.
   :::
@@ -191,7 +192,7 @@ Enhanced with Nuxt Content
   ---
   #title
   File-based Routing
-
+  
   #description
   Organize content in folders and files. Your documentation structure automatically becomes your navigation.
   :::
@@ -202,7 +203,7 @@ Enhanced with Nuxt Content
   ---
   #title
   Syntax Highlighting
-
+  
   #description
   Beautiful code blocks with language detection, line numbers, and copy buttons. Support for 100+ languages.
   :::
@@ -213,7 +214,7 @@ Enhanced with Nuxt Content
   ---
   #title
   Content Database
-
+  
   #description
   Query your content with a MongoDB-like API. Filter, sort, and search through your documentation programmatically.
   :::
@@ -224,7 +225,7 @@ Enhanced with Nuxt Content
   ---
   #title
   Frontmatter Support
-
+  
   #description
   Add metadata to your content files. Define SEO tags, navigation properties, and custom fields.
   :::
@@ -235,29 +236,30 @@ Enhanced with Nuxt Content
   ---
   #title
   Version Control
-
+  
   #description
   Content lives in your repository. Branch, review, and deploy documentation alongside your code.
   :::
 ::
 
-::u-page-section{class="dark:bg-gradient-to-b from-neutral-950 to-neutral-900"}
+::u-page-section{.dark:bg-gradient-to-b.from-neutral-950.to-neutral-900}
   :::u-page-c-t-a
   ---
   links:
     - label: Start building
-      to: '/about'
+      to: /about
       trailingIcon: i-lucide-arrow-right
     - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/docs'
+      to: https://github.com/nuxt-ui-templates/docs
       target: _blank
       variant: subtle
       icon: i-simple-icons-github
-  title: Ready to build an amazing documentation?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
   class: dark:bg-neutral-950
+  description: Join thousands of developers building with Nuxt and Nuxt UI. Get
+    this template and start shipping today.
+  title: Ready to build an amazing documentation?
   ---
-
-  :stars-bg
+    ::::stars-bg
+    ::::
   :::
 ::
