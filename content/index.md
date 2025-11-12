@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Nuxt Docs Template
-  description: Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
+  title: Empire City Construction
+  description: Design your space & let us make it happen
 ---
 
 ::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
@@ -246,7 +246,7 @@ Enhanced with Nuxt Content
   ---
   links:
     - label: Start building
-      to: '/getting-started'
+      to: '/about'
       trailingIcon: i-lucide-arrow-right
     - label: View on GitHub
       to: 'https://github.com/nuxt-ui-templates/docs'
