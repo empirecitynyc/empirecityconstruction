@@ -9,9 +9,9 @@ const columns = [{
 }, {
   label: 'BUILD',
   children: [{
-    label: 'Structural Work, Waterproofing, Mechanical, Electrical & Plumbing'
+    label: 'Structural, Waterproofing, Mechanical, Electrical, Plumbing'
   }, {
-    label: 'Wood Flooring, Stone Fabrication & Tile Work, Plaster & Paint'
+    label: 'Wood, Stone, Tile, Drywall, Plaster & Paint'
   }]
 }]
 </script>
