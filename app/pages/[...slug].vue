@@ -41,8 +41,8 @@ const links = computed(() => {
   const links = []
   if (toc?.bottom?.edit) {
     links.push({
-      icon: 'i-lucide-external-link',
-      label: 'Edit this page',
+      icon: 'i-lucide-land-plot',
+      label: 'Survey',
       to: `${toc.bottom.edit}/${page?.value?.stem}.${page?.value?.extension}`,
       target: '_blank'
     })
@@ -83,7 +83,7 @@ const links = computed(() => {
 
     <template
       v-if="page?.body?.toc?.links?.length"
-      #right
+      #left
     >
       <UContentToc
         :title="toc?.title"
@@ -98,13 +98,12 @@ const links = computed(() => {
             :class="{ '!mt-6': page.body?.toc?.links?.length }"
           >
             <USeparator
-              v-if="page.body?.toc?.links?.length"
               type="dashed"
             />
 
-            <UPageLinks
-              :title="toc.bottom.title"
-              :links="links"
+            <UContentNavigation
+              highlight
+              :navigation="navigation"
             />
           </div>
         </template>

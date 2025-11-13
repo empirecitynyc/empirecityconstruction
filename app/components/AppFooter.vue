@@ -18,7 +18,7 @@ const columns = [{
 
 <template>
   <USeparator
-    icon="i-lucide-layers"
+    icon="i-lucide-layers-3"
     class="h-px"
   />
 
