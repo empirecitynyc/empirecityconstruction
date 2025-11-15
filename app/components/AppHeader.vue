@@ -26,7 +26,7 @@ const { header } = useAppConfig()
         :light="header?.logo?.light!"
         :dark="header?.logo?.dark!"
         :alt="header?.logo?.alt"
-        class="h-6 w-auto shrink-0"
+        class="h-5 w-auto shrink-0"
       />
 
       <span v-else-if="header?.title">

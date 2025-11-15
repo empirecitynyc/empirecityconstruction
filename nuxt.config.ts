@@ -53,7 +53,7 @@ export default defineNuxtConfig({
 
   llms: {
     domain: 'https://empirecityconstruction.vercel.app/',
-    title: 'Nuxt Docs Template',
+    title: 'Empire City Construction',
     description: 'A website for showing off our work',
     full: {
       title: 'Empire City Construction',
