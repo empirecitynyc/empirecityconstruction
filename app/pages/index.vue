@@ -13,8 +13,8 @@ useSeoMeta({
   ogTitle: title,
   description,
   ogDescription: description,
-  ogImage: 'https://empirecityconstruction.vercel.app/1.Upper_East_Side_Appartment/living1.jpg',
-  twitterImage: 'https://empirecityconstruction.vercel.app/1.Upper_East_Side_Appartment/living1.jpg'
+  ogImage: 'https://empirecitynyc.com/1.Upper_East_Side_Appartment/living1.jpg',
+  twitterImage: 'https://empirecitynyc.com/1.Upper_East_Side_Appartment/living1.jpg'
 })
 </script>
 
