@@ -52,7 +52,7 @@ export default defineNuxtConfig({
   },
 
   llms: {
-    domain: 'https://empirecityconstruction.vercel.app/',
+    domain: 'https://empirecitynyc.com/',
     title: 'Empire City Construction',
     description: 'A website for showing off our work',
     full: {
