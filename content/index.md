@@ -21,7 +21,6 @@ The Empire City Construction team aims to deliver quality and premium customer s
   :::div{.w-full.object-cover.object-center.overflow-hidden}
     ::::carousel
     ---
-    dots: true
     items:
       - /1.Upper_East_Side_Apartment/AN_45.jpg
       - /3.1_Gracie_Square/1GracieSquare_53.jpg
